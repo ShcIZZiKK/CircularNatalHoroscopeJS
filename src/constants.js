@@ -88,12 +88,6 @@ export const BODIES = {
   },
   'pluto': {
     label: 'Pluto'
-  },
-  'chiron': {
-    label: 'Chiron'
-  },
-  'sirius': {
-    label: 'Sirius'
   }
 }
 

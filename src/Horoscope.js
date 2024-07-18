@@ -80,6 +80,7 @@ export class Horoscope {
 
     // Remember - Ephemeris requires UTC time!
     this.Ephemeris = new Ephemeris({
+      key: Object.keys(BODIES),
       year: this.origin.utcTime.year(),
       month: this.origin.utcTime.month(),
       day: this.origin.utcTime.date(),

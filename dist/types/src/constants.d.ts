@@ -44,37 +44,29 @@ export namespace BODIES {
         const label_9: string;
         export { label_9 as label };
     }
-    namespace chiron {
-        const label_10: string;
-        export { label_10 as label };
-    }
-    namespace sirius {
-        const label_11: string;
-        export { label_11 as label };
-    }
 }
 export namespace POINTS {
     namespace northnode {
-        const label_12: string;
-        export { label_12 as label };
+        const label_10: string;
+        export { label_10 as label };
     }
     namespace southnode {
-        const label_13: string;
-        export { label_13 as label };
+        const label_11: string;
+        export { label_11 as label };
     }
     namespace lilith {
-        const label_14: string;
-        export { label_14 as label };
+        const label_12: string;
+        export { label_12 as label };
     }
 }
 export namespace ANGLES {
     namespace ascendant {
-        const label_15: string;
-        export { label_15 as label };
+        const label_13: string;
+        export { label_13 as label };
     }
     namespace midheaven {
-        const label_16: string;
-        export { label_16 as label };
+        const label_14: string;
+        export { label_14 as label };
     }
 }
 export const HOUSES: {
