@@ -22,8 +22,15 @@ export const getHouseFromDD = (houses, decimalDegrees) => {
 
 export const constructHouses = (cuspsArray, ascendantDegrees, zodiac, language = 'en') => cuspsArray.map((cuspDegree, index) => {
   const houseId = index + 1;
+
+  let eclipticDegreesEnd = cuspsArray[modulo(index + 1, cuspsArray.length + 1)]
+
+  if (eclipticDegreesEnd === undefined) {
+    eclipticDegreesEnd = cuspsArray[0]
+  }
+
   return new House({
-    ascendantDegrees, eclipticDegreesStart: cuspDegree, eclipticDegreesEnd: cuspsArray[modulo(index + 1, cuspsArray.length + 1)], id: houseId, zodiac, language,
+    ascendantDegrees, eclipticDegreesStart: cuspDegree, eclipticDegreesEnd, id: houseId, zodiac, language,
   });
 });
 
